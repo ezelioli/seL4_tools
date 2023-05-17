@@ -249,6 +249,10 @@ static int run_elfloader(UNUSED int hart_id, void *bootloader_dtb)
                                                   ,
                                                   hart_id,
                                                   0
+#else
+                                                  ,
+                                                  0,
+                                                  0
 #endif
                                                  );
 

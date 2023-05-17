@@ -23,5 +23,9 @@ typedef void (*init_riscv_kernel_t)(word_t ui_p_reg_start,
                                     ,
                                     word_t hart_id,
                                     word_t core_id
+#else
+                                    ,
+                                    word_t extra_device_addr_p,
+                                    word_t extra_device_size
 #endif
                                    );
